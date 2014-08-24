@@ -3,7 +3,25 @@ DataCleaningProject
 
 Data Getting and Cleaning course project repository
 
-BLAH - location of original dataset and name of read.me and info file
+This project produces a data set derived from data collect from the
+accelerometers in a Samsung Galaxy S smartphone. A full description
+is available at the site where the data was obtained: 
+
+http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
+
+The data set for this project is located at:
+
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
+
+This file contains both the training and test data sets. Additionally a description of
+the data can be found in the files:
+
+    features_info.txt
+
+Variable names are listed in:
+
+    features.txt
+
 
 The script run_analysis.R processes a set of data files to extract a summary of
 means of data set vaiables based on a subject id and activity. It assumes the 
@@ -24,10 +42,10 @@ local working directory
 
       dataSummary.txt
 
-For more info describing the data inputs and the results produced by
-this script, Check the project codebook included in this repository.
+For more info describing the results produced by this script, Check
+the project codebook included in this repository.
 
-      Accelerometer Project Codebook        
+      Accelerometer Project Codebook.txt        
 
 
 The script "run_analysis.R" processes the data as follows:
