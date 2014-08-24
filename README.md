@@ -5,9 +5,9 @@ Data Getting and Cleaning course project repository
 
 BLAH - location of original dataset and name of read.me and info file
 
-The script run_analysis.R processes a set of data files to extract a summary of
-means of data set vaiables based on a subject id and activity. It assumes the 
-following data sets are present in the local working director.
+##The script run_analysis.R processes a set of data files to extract a summary of
+##means of data set vaiables based on a subject id and activity. It assumes the 
+##following data sets are present in the local working director.
 
        y_test.txt
        subject_test.txt
