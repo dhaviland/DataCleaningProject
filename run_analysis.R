@@ -21,7 +21,15 @@
 #
 #      dataSummary.txt
 #
-#collect test data
+#For a more complete description of the processing done, consult the README.md
+# file. For more info describing the data inputs and the results produced by
+#this script, Check the project codebook included in this repository.
+#
+#      Accelerometer Project Codebook        
+#
+#
+#
+#Start by loading the input dataset
 testActivityData<-read.table("./y_test.txt")
 testSubjectData<-read.table("./subject_test.txt")
 testData<-read.table("./x_test.txt")
@@ -39,6 +47,7 @@ filename<-"./features.txt"
 con<-file(filename)
 variableNames<-readLines(con)
 close(con)
+#
 #merge (subject,activity,data) from test sets
 mergedTestData <-cbind(testSubjectData,testActivityData,testData)
 #merge (subject,activity,data) from training sets
