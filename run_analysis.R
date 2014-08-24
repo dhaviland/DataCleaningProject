@@ -1,20 +1,20 @@
 # download dataset
 
 #collect test data
-testActivityData<-read.table("./UCI HAR Dataset/test/y_test.txt")
-testSubjectData<-read.table("./UCI HAR Dataset/test/subject_test.txt")
-testData<-read.table("./UCI HAR Dataset/test/x_test.txt")
+testActivityData<-read.table("./y_test.txt")
+testSubjectData<-read.table("./subject_test.txt")
+testData<-read.table("./x_test.txt")
 #collect training data
-trainingActivityData<-read.table("./UCI HAR Dataset/train/y_train.txt")
-trainingSubjectData<-read.table("./UCI HAR Dataset/train/subject_train.txt")
-trainingData<-read.table("./UCI HAR Dataset/train/X_train.txt")
+trainingActivityData<-read.table("./y_train.txt")
+trainingSubjectData<-read.table("./subject_train.txt")
+trainingData<-read.table("./X_train.txt")
 #get activity labels list
-filename<-"./UCI HAR Dataset/activity_labels.txt"
+filename<-"./activity_labels.txt"
 con<-file(filename)
 activityLegend<-readLines(con)
-close(con)
+close(con)   
 #get variable names list
-filename<-"./UCI HAR Dataset/features.txt"
+filename<-"./features.txt"
 con<-file(filename)
 variableNames<-readLines(con)
 close(con)
