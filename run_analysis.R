@@ -1,5 +1,26 @@
-# download dataset
+#run_analysis.R
+#Creation: 08/24/2014
+#Author: XYZ
 
+#This script processes a set of data files to extract a summary means of
+#data set vaiables based on a subject id and activity. It assumes the 
+#following data sets are present in the local working director.
+#
+#       y_test.txt
+#       subject_test.txt
+#       x_test.txt
+#       y_train.txt
+#       subject_train.txt
+#       X_train.txt
+#       activity_labels.txt
+#       features.txt
+#
+#
+#The output of this script is the following text file saved in the
+#local working directory
+#
+#      dataSummary.txt
+#
 #collect test data
 testActivityData<-read.table("./y_test.txt")
 testSubjectData<-read.table("./subject_test.txt")
