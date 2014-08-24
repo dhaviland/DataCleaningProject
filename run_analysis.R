@@ -55,7 +55,7 @@ mergedTrainingData <-cbind(trainingSubjectData,trainingActivityData,trainingData
 #merge combined training and test sets
 mergedData<-rbind(mergedTrainingData,mergedTestData)
 #select columns which are a mean or standard deviation by their names
-ccolumnsToSelect<-grepl("mean|std",variableNames)
+columnsToSelect<-grepl("mean|std",variableNames)
 #now add the subject id and acitivty code to column selections
 columnsToSelect2<-c(TRUE,TRUE,columnsToSelect)
 #use this to select only deired columns of the merged data sets
